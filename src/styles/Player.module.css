@@ -1,0 +1,279 @@
+.container {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: row; 
+    background-color: white;
+    justify-content: space-between; 
+    margin-top: 20px;
+    border-radius: 4px; 
+}
+
+.container .ban {
+    width: 100%;
+    background-color: #FBF6F0;
+}
+
+.container .ban .error {  
+    color: rgb(227, 75, 75);
+    font-family: poppins;
+    font-size: 1.2rem;
+}
+
+.container .ban .form {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .ban .form input {
+    flex: 1;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.container .ban .form input:focus {
+    outline: none;
+}
+
+.container .ban .form select {
+    margin: 0px 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.container .ban .form button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: none;
+    background-color: rgb(52, 201, 221);
+    border-radius: 4px;
+    font-family: poppins;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(52, 201, 221);
+}
+
+.container:last-child {
+    margin-bottom: 20px;
+}
+
+.container .body {
+    padding: 20px;  
+    flex: 1;
+}
+
+.container .inventory {
+    padding: 20px; 
+    width: 45%;  
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.container .inventory .item { 
+    position: relative;
+    background-color: #FBF6F0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.container .inventory .item .amount {
+    position: absolute;
+    width: 20px;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+    background-color: rgb(245, 229, 185);
+    color: rgb(255, 145, 2);
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.container .inventory .item img {
+    height: 50px;
+}
+
+.container .banned {
+    flex: 1;
+    background-color: rgba(255, 73, 73, 0.432);
+    color: rgb(245, 12, 12);
+    border: 2px solid rgb(245, 12, 12);
+    height: 100%;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.container .banned span {
+    background-color: rgb(109, 105, 227);
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+    color: white;
+}
+
+.container .body .section .title {
+    font-family: poppins;
+    font-size: 1.1rem; 
+}
+
+.container .body .section .description {
+    margin-top: 10px;
+    opacity: .4;
+}
+
+.container .body table { 
+    margin-top: 20px; 
+    border-spacing: 0;
+    width: 100%; 
+    background-color: transparent; 
+    color: black;
+}
+
+.container .body th {
+    text-align: left;
+    padding: 16px;
+}
+
+.container .body td { 
+    padding: 16px;
+}
+
+.container .body td span {  
+    user-select: none;
+    cursor: pointer;
+}
+
+.gavel {
+    background-color: rgba(96, 190, 197, 0.527);
+    color: rgb(52, 201, 221);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.container .body td .active {
+    background-color: rgba(255, 80, 67, 0.527);
+    color: red;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.container .body td .appealed {
+    background-color: rgba(111, 255, 67, 0.527);
+    color: lime;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.container .body tr {
+    transition: .5s; 
+}
+
+.container .body tr:nth-child(even) {
+    background-color: #0a0a0a21;
+}
+
+.money div {
+    display: flex;
+    align-items: center;  
+}
+
+.money span {
+    margin-right: 10px; 
+}
+
+.account_information {
+    display: flex; 
+    width: 1100px;
+    flex-direction: row;   
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-radius: 4px; 
+    align-items: center;
+    height: 300px;
+    background-position: center; 
+}
+
+.account_information .discord {
+    background-color: #FBF6F0;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.account_information .discord img {
+    border-radius: 4px;
+    height: 130px;
+    width: 130px;
+}
+
+.account_information .discord .information {
+    margin-left: 20px;
+}
+
+.account_information .discord .information div:not(:first-child) {
+    margin-top: 10px;
+}
+
+.account_information .discord .information div {
+    display: flex;
+    align-items: center;
+}
+
+.account_information .discord .information div span {
+    margin-right: 10px; 
+    color: rgb(227, 75, 75);
+}
+
+.player_vehicles {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.player_vehicles div {
+    background-color: rgba(62, 83, 217, 0.355);
+    border-radius: 4px; 
+    color: rgb(62, 83, 217); 
+    border: 1px solid rgb(62, 83, 217);
+    margin-top: 3px; 
+    padding: 5px; 
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .container { 
+        width: 90%;  
+    }   
+}
+
+@media (max-width: 1000px) {
+    .container { 
+        width: 90%; 
+        flex-direction: column; 
+    }  
+
+    .account_information { 
+        width: 90%;  
+    } 
+
+    .account_information .discord { 
+        flex-wrap: wrap;
+        padding: 30px;
+    }  
+
+    .container .body {
+        width: 90%;
+    }
+    
+    .container .inventory {
+        width: 90%;
+    }
+} 

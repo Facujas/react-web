@@ -1,0 +1,200 @@
+.container {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: column; 
+    margin-top: 40px; 
+}
+
+.container .wallpaper { 
+    width: 100%;
+    height: 250px;
+    background-image: url("https://www.borntoplay.es/wp-content/uploads/2013/07/gtav.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+} 
+
+.container .wallpaper .panel {
+    width: 300px;
+    height: 150px;
+    margin-bottom: -40px;
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px; 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.192);
+    position: relative;
+    z-index: 1;
+} 
+
+.container .wallpaper .panel .info {
+    color: black;
+    margin-left: 30px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    height: 100%;
+}
+
+.container .wallpaper .panel .info .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container .wallpaper .panel .info .description {
+    font-size: 15px;
+    font-family: boxed;  
+}
+
+.fivemLogo {
+    height: 100%;
+    bottom: -2%;
+    left: 20%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.administrators {
+    width: 100%;
+    margin-top: 20px; 
+    background-color: white;
+    border-radius: 4px; 
+    margin-bottom: 30px;
+}
+
+.administrators table {  
+    padding: 20px 40px;
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%; 
+    background-color: transparent; 
+    color: black;
+}
+
+.administrators th {
+    text-align: left;
+    padding: 16px;
+    opacity: .4;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.administrators td { 
+    padding: 16px;   
+}
+
+.administrators td img {
+    height: 40px;
+    width: 40px; 
+    border-radius: 4px;
+}
+
+.administrators td span {  
+    user-select: none;
+    cursor: pointer;
+}
+
+.administrators tr {
+    transition: .5s; 
+}
+
+.administrators tbody tr:nth-child(odd) {
+    background-color: #0a0a0a0d; 
+} 
+
+.administrators table .group span {
+    background-color: rgba(171, 136, 216, 0.5);
+    color: rgb(86, 111, 200);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.administrators .actions { 
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.administrators .actions span {
+    margin-left: 15px;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(79, 177, 218, 0.334);
+    color: rgb(0, 106, 255);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.administrators .section {
+    padding: 0px 40px;
+    padding-top: 30px; 
+    display: flex;
+}
+
+.administrators .section input {
+    flex: 1;
+    border: none;
+    background-color: #0a0a0a0d;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 4px;
+}
+
+.administrators .section input:focus {
+    outline: none;
+}
+
+.information {
+    width: 100%;
+    margin-top: 80px; 
+    background-color: white;
+    border-radius: 4px; 
+    margin-bottom: 30px;
+} 
+
+.information .title {
+    font-family: poppins;
+    font-size: 1.1rem; 
+    margin-top: 30px;
+    padding: 0px 40px;
+}
+
+.information .description {
+    margin-top: 10px; 
+    opacity: .4;
+    margin: 20px 0px;
+    padding: 0px 40px;
+}
+
+@media (max-width: 1200px) {
+    .container { 
+        width: 90%;  
+    } 
+
+    .container .wallpaper .panel { 
+        width: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+    .container .wallpaper .panel .info { 
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .wallpaper .panel .info .description {
+        display: none;
+    }
+
+    .fivemLogo {
+        display: none;
+    }
+} 

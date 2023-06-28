@@ -1,0 +1,327 @@
+.store {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: row; 
+    background-image: url(https://i.pinimg.com/originals/d3/b0/2b/d3b02bfd05eb4f2d6c2d6654c20f9eac.jpg);
+    background-size: cover;
+    background-position: top;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 4px; 
+}  
+
+.store .section {
+    background-color: white;
+    width: 48%; 
+    margin: 30px 0px;
+    display: flex;
+    z-index: 2;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px gray;
+    flex-direction: column;
+}
+
+.store .section:first-child {
+    width: 30%;
+}
+
+.store .section div { 
+    padding-top: 20px;
+}
+
+.store .section .coins {
+    font-family: poppins;
+    font-size: 1.4rem;
+    color: rgb(255, 97, 97); 
+}
+
+.store .section .title {
+    font-family: poppins;
+    margin-left: 20px;
+    font-size: 1.4rem; 
+}
+
+.store .section .description { 
+    margin-left: 20px; 
+}
+
+.store .section .title span {
+    font-family: poppins;
+    font-size: 1.4rem;
+    color: rgb(255, 97, 97); 
+}
+
+.store .section input {
+    margin: 0px 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none; 
+    background-color: #FBF6F0;
+}
+
+.store .section input:focus {
+    outline: none;
+}
+
+.store .section select {
+    margin: 0px 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.store .section button {
+    margin: 20px;
+    padding: 10px;
+}
+
+.container {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: column; 
+    background-color: #FBF6F0;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 4px; 
+} 
+
+.unauthorized {  
+    color: red; 
+    margin-top: -25px;
+    margin-bottom: 20px;
+} 
+
+.container {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: row; 
+    background-color: white;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 4px; 
+    margin-bottom: 40px;
+} 
+
+.container .transactions {
+    width: 100%; 
+}
+
+.transactions table {  
+    padding: 20px 40px; 
+    width: 100%;
+    border-spacing: 0;
+    width: 100%;  
+    color: black;
+}
+
+.transactions th {
+    text-align: left;
+    padding: 16px;
+    opacity: .4;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.transactions td { 
+    padding: 16px;    
+}
+
+.transactions td img {
+    height: 40px;
+    width: 40px; 
+    border-radius: 4px;
+}
+
+.transactions td span {  
+    user-select: none;
+    cursor: pointer;
+}
+
+.transactions tr {
+    transition: .5s; 
+}
+
+.transactions tbody tr:nth-child(odd) {
+    background-color: #0a0a0a0d; 
+} 
+
+.transactions td span { 
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.transactions td .confirmed {
+    background-color: rgba(108, 214, 108, 0.437); 
+    color: green;
+}
+
+.transactions td .cancelled {
+    background-color: rgba(255, 97, 97, 0.453); 
+    color: red;
+}
+
+.information {
+    width: 100%; 
+    background-color: white;
+    border-radius: 4px;  
+} 
+
+.information .title {
+    font-family: poppins;
+    font-size: 1.3rem; 
+    margin-top: 30px;
+    padding: 0px 40px;
+}
+
+.information .description {
+    margin-top: 10px; 
+    opacity: .4;
+    margin: 20px 0px;
+    padding: 0px 40px;
+}
+
+.storeContainer {  
+    display: flex; 
+    width: 1100px;
+    flex-direction: row; 
+    background-color: transparent;
+    align-items: center; 
+    flex-wrap: wrap; 
+    border-radius: 4px; 
+} 
+
+.storeContainer .storeItem {
+    background-color: white;
+    position: relative; 
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 20px;
+} 
+
+.storeContainer .storeItem img { 
+    height: 50px; 
+}
+
+.storeContainer .storeItem .right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.storeContainer .storeItem .right .name {
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.storeContainer .storeItem .right .price {
+    margin-top: 20px;
+    float: right; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    font-family: poppins;
+    font-size: 1.2rem;
+    color: rgb(148, 98, 83);
+}
+
+.storeContainer .storeItem .right .price div {
+    display: flex;
+    align-items: center;
+}
+
+.storeContainer .storeItem .right .price div span {
+    padding-left: 10px;
+}
+
+.storeContainer .storeItem .right .price button {
+    margin-left: 20px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(255, 97, 97);
+    color: white;
+    box-shadow: 0px 0px 5px rgb(255, 97, 97);
+}
+
+.storeContainer .storeItemSelected { 
+    flex: 1; 
+}
+
+.storeContainer .storeItemSelected .itemDescription {
+    margin-top: 10px;
+    opacity: .7;
+    text-align: right;
+    word-break: break-all;
+    padding-left: 30px; 
+}
+
+@media (max-width: 1200px) {
+    .container { 
+        width: 90%;  
+    }  
+
+    .store { 
+        width: 90%;  
+    } 
+
+    .container .section img {
+        height: 250px;
+    }
+
+    .storeContainer { 
+        width: 90%;   
+    } 
+}
+
+@media (max-width: 800px) {  
+    .store {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+
+    .store .section:first-child { 
+        width: 90%;
+    }
+
+    .store .section {
+        width: 90%; 
+        padding-bottom: 20px;
+    }
+
+    .store .section:last-child {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .storeItem { 
+        width: 100%;  
+    } 
+
+    .storeContainer .storeItemSelected {
+        flex-direction: column;
+    }
+
+    .storeContainer .storeItemSelected .right {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    .storeContainer .storeItemSelected .right div {
+        text-align: center; 
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .storeContainer .storeItemSelected .right .name { 
+        text-align: center;
+    }
+}

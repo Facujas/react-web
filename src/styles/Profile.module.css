@@ -1,0 +1,97 @@
+.container {   
+    width: 1100px;  
+    margin-top: 20px; 
+    border-radius: 4px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.container .no_characters {
+    background-color: rgb(244, 70, 70);
+    flex: 1;
+    margin: 20px 0px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(244, 70, 70);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.container .left {
+    position: relative;
+    background-color: white; 
+    border-radius: 4px; 
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left input {
+    margin-left: 50px;
+    width: 50%;
+    z-index: 5;
+    margin-top: 10px;
+    padding: 7px 10px;
+    background-color: #FBF6F0;
+    border: none;
+    border-radius: 4px;
+}
+
+.container .left div {
+    width: 53%;
+    margin-left: 50px;
+    font-family: poppins;
+    margin-bottom: 15px;
+    color: rgb(83, 106, 238);
+}
+
+.container .left button {
+    width: 53%;
+    z-index: 5;
+    margin-top: 10px;
+    padding: 7px 10px;
+    margin-left: 50px;
+    background-color: rgb(83, 106, 238);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.container .left img {
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+}
+
+.container iframe {
+    height: 300px;
+    border: none;
+    width: 40%;
+}
+
+@media (max-width: 1200px) {
+    .container { 
+        width: 90%;   
+    }    
+}
+
+@media (max-width: 900px) {
+    .container {  
+        flex-direction: column;
+    }   
+
+    .container .left {
+        width: 100%;
+        min-height: 350px;
+    }
+
+    .container iframe {
+        width: 100%;
+        margin-top: 20px;
+        height: 400px;
+    }
+}
